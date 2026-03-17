@@ -1,14 +1,7 @@
-/* 仅首页布局生效，ThemeStudio 通过 .studio 自带布局 */
+/* App 容器样式 */
 #root {
   width: 100%;
-  min-height: 100vh;
-}
-
-#root:has(.home-page) {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  height: 100%;
 }
 
 .logo {

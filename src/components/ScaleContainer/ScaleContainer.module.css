@@ -1,0 +1,32 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  position: relative;
+  overflow: hidden;
+  /* 开启 GPU 加速，提升渲染性能 */
+  will-change: transform;
+  /* 抗锯齿 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* 防止模糊 */
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* 针对缩放内容的优化 */
+.content * {
+  /* 确保内部元素不溢出 */
+  box-sizing: border-box;
+}
